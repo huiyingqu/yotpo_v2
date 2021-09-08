@@ -154,6 +154,12 @@ view: reviews {
     sql: ${TABLE}."VOTES_UP" ;;
   }
 
+  measure: count {
+    type: count
+    hidden: yes
+    drill_fields: [review_id, user_name, review_custom_data.count]
+  }
+
   measure: total_reviews {
     label: "Review Count"
     group_label: "Count"
