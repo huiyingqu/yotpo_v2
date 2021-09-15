@@ -106,7 +106,8 @@ view: reviews {
 
   dimension: score {
     type: number
-    hidden: yes
+    group_label: "Reviews"
+    label: "Review Score"
     sql: ${TABLE}."SCORE" ;;
   }
 

@@ -33,7 +33,13 @@ explore: reviews {
     sql_on: ${review_custom_data.custom_field_id} = ${custom_fields.custom_field_id} ;;
 
   }
+}
 
+explore: yotpo_daily {
+  from: yotpo_daily_sku_measures
+  label: "Reviews and Orders"
+  description: "Yotpo review data combined with total order data from order sources.  Allows merchants to see reviews for top 10 products sold all time"
+  view_label: "Yotpo Dailies"
 }
 
 explore: products_reviews {
